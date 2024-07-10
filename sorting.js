@@ -26,38 +26,20 @@ const prompt = require('prompt-sync')()
 
 //  SELECTION SORT
 
-// let n = Number(prompt("enter the number >>> "))
-// let arr =[]
-// for(let i = 0 ;i<n;i++){
-//     let element = Number(prompt("enter the element >> "))
-//     arr.push(element)
-// }console.log(arr);
-// for(let i = 0;i<arr.length;i++){
-//     let small = i
-//     for(let j =i+1;j<arr.length;j++){
-//         if(arr[small]>arr[j]){
-//             small = j
-//         }
-//     }
-//     let temp = arr[small]
-//     arr[small]= arr[i]
-//     arr[i]=temp
-// }console.log(arr);
-
-// let n = Number(prompt("enter the number >> "))
-// let arr =[]
-// for(let i =0;i<n;i++){
-//     let element = Number(prompt("enter the element >> "))
-//     arr.push(element)
-// }console.log(arr);
-// for(let i =0;i<arr.length;i++){
-//     let smallest = i
-//     for(j = i+1;j<arr.length;j++){
-//         if(arr[smallest]>arr[j]){
-//             smallest = j
-//         }
-//     }
-//     let temp = arr[i]
-//     arr[i]=arr[smallest]
-//     arr[smallest]=temp
-// }console.log(arr);
+let n = Number(prompt("enter the number >>> "))
+let arr =[]
+for(let i = 0 ;i<n;i++){
+    let element = Number(prompt("enter the element >> "))
+    arr.push(element)
+}console.log(arr);
+for(let i = 0;i<arr.length;i++){
+    let small = i
+    for(let j =i+1;j<arr.length;j++){
+        if(arr[small]>arr[j]){
+            small = j
+        }
+    }
+    let temp = arr[small]
+    arr[small]= arr[i]
+    arr[i]=temp
+}console.log(arr);
